@@ -25,8 +25,9 @@ Goal: "Batteries Traded/Sold:" Display number
 ## art
 Words: "Batteries for Trade or sale!"
 Words: "Batteries Traded/Sold"
-2. Lazer cut - arylic with side lighting
-3. Lazer cut wood - with filter paper glued to back
-4. PCB board printed with filter paper/filter plastic
-5. 3d printed clear see through
-6. Battery with bars and LED display through
+
+1. Lazer cut - arylic with side lighting
+2. Lazer cut wood - with filter paper glued to back
+3. PCB board printed with filter paper/filter plastic
+4. 3d printed clear see through
+5. Battery with bars and LED display through

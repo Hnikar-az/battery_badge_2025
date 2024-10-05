@@ -65,6 +65,3 @@ def led_control(led_state):
 
 button_input(initial_count, led_state)
 
-
-
-

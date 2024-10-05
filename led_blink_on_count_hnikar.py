@@ -61,15 +61,10 @@ def button_hold(initial_count, led_state):
     if button.value() == 0:  # key press
         print("Button Holder Activating!")
         if led_state == False:
-            #led.value(1)
-
-            #while button.value() == 0:
             led_state = True
             led_control(led_state)
             time.sleep(1)
         elif led_state == True:
-            #while button.value() == 0:
-
             led_state = False
             led_control(led_state)
             time.sleep(1)

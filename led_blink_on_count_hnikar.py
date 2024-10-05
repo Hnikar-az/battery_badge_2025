@@ -57,7 +57,6 @@ def button_hold(initial_count, led_state):
     print("Button Hold checker")
     print("Sleep 1")
     time.sleep(.3)
-
     if button.value() == 0:  # key press
         print("Button Holder Activating!")
         if led_state == False:

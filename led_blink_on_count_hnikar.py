@@ -77,10 +77,10 @@ def button_hold(initial_count, led_state):
     return led_state
 
 def led_control(led_state):
-    if led_state == False:
+    if led_state == True:
         led.value(1)  # led_on
         print("LED On")
-    elif led_state == True:
+    elif led_state == False:
         led.value(0)  # led_off
         print("LED OFF")
     return (led_state)

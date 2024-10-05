@@ -42,7 +42,7 @@ def button_input_counter(initial_count):
 
 def led_flasher(target_count):
     if target_count != 0:
-        flash_count = 1
+        flash_count = 0
         while target_count != flash_count:
             print("Target Count:", target_count)
             led_control(True)

@@ -37,6 +37,7 @@ def button_input_counter(initial_count):
             print("count value:", count)
             print("activating led_flasher with:", count)
             led_flasher(count)
+            time.sleep(1)
             print("ready for button press")
 
 def led_flasher(target_count):

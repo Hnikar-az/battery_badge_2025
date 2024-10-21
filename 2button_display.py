@@ -52,4 +52,3 @@ while True:
     else:
         button_press = False
 
-#time.sleep(1)

@@ -17,15 +17,13 @@ def display(display_text):
     oled.show()
 
 def plus_button_input(count):
-    if plus_button.value() == 0:
-        count += 1
-        print(count)
+    count += 1
+    print(count)
     return count
 
 def minus_button_input(count):
-    if minus_button.value() == 0:
-        count -= 1
-        print(count)
+    count -= 1
+    print(count)
     return count
 
 def display_update(count, display_update_value):
@@ -39,16 +37,24 @@ def debouncer(wait_time):
 
 display_update_value = display_update(count, display_update_value) # to initialize the screen
 while True:
-    if minus_button.value() == 0 or plus_button.value() == 0:
+    if plus_button.value() == 0:
         count = plus_button_input(count)
-        count = minus_button_input(count)
-        display_update_value = display_update(count, display_update_value)
-        print(count)
+        button_press = True
         if button_press == False:
             debouncer(0.3)
         elif button_press == True:
             debouncer(0.2)
+    elif minus_button.value() == 0:
+        count = minus_button_input(count)
         button_press = True
+        if button_press == False:
+            debouncer(0.3)
+        elif button_press == True:
+            debouncer(0.2)
     else:
         button_press = False
+    display_update_value = display_update(count, display_update_value)
+    print(count)
+
+
 

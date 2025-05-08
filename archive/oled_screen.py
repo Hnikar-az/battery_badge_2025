@@ -2,6 +2,9 @@ from machine import Pin, I2C
 from ssd1306 import SSD1306_I2C
 import time
 
+# https://docs.micropython.org/en/latest/esp8266/tutorial/ssd1306.html
+# "packed font" for larger fonts for oled screen
+# https://github.com/mark-gladding/packed-font
 count = 0
 
 def display(display_text):
@@ -20,4 +23,5 @@ def display(display_text):
 for count in range(100):
     display(count)
     print(count)
+    print(f"Time: {time.strftime('%X')}")
     time.sleep(1)
